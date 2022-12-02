@@ -1,0 +1,45 @@
+A-X = 4 (draw)
+A-Y = 8 (win)
+A-Z = 3 (loss)
+
+B-X = 1 (loss)
+B-Y = 5 (draw)
+B-Z = 9 (win)
+
+C-X = 7 (win)
+C-Y = 2 (loss)
+C-Z = 6 (draw)
+
+The score for a single round is the score for the shape you selected (1 for Rock, 2 for Paper, and 3 for Scissors) plus the score for the outcome of the round (0 if you lost, 3 if the round was a draw, and 6 if you won).
+
+A=rock (opponent)
+B=paper (opponent)
+C=scissors (opponent)
+
+X=rock (1pt)
+Y=paper (2pt)
+Z=scissors (3pt)
+
+Als ik X kies: 1 of 4 of 7
+Als ik Y kies: 2 of 5 of 8
+Als ik Z kies: 3 of 9 of 6
+
+X is loss (0pts)
+Y is draw (3pts)
+Z is win (6pts)
+
+A: scissors (3) lose, paper (2) wins
+
+A-X = loss (0), I pick scissors (3) = 2
+A-Y = draw (3) + rock (1) = 4
+A-Z = win (6) + paper (2) = 8
+
+paper: scissors (3) win, rock (1) loses
+B-X =  (loss)  = 1
+B-Y =  (draw) = 5
+B-Z =  (win) = 9
+
+rock (1) wins, paper (2) loses
+C-X = (loss) = 2
+C-Y = (draw) = 6
+C-Z = (win) 7

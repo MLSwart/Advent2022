@@ -7,3 +7,10 @@ Input verwerken:
 
 Berekening:
 
+-Groepeer de series getallen per Elf (cel van een matrix?)
+-Bereken voor elke Elf de som van de getallen (CalSom)
+-Zoek welke CalSom het hoogste is
+-Print de hoogste CalSom
+
+
+Ideetjes: het langste getal is het grootste, dus je kunt beginnen met schiften op lengte. Maar is dat nuttig?
