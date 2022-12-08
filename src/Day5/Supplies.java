@@ -17,7 +17,7 @@ public class Supplies {
         Stack<String> stackTowards = supplies.emptyStack;
 
         for (int i = 0; i <= instructions[i][0]-1; i++) {
-            String cache = " ";
+
             int moveAmnt= instructions[i][0];
             if (instructions[i][1] == 1) {
                 stackFrom = stack1;
@@ -39,7 +39,7 @@ public class Supplies {
             }
             //zovaak als moveAmnt, kopieer top-of-stack van stackFrom naar cache. Push cache naar stockTowards. Pop stackFrom.
             for(int m=0; m<moveAmnt; m++){
-                cache=stackFrom.peek();
+                String cache = stackFrom.peek();
                 stackTowards.add(cache);
                 stackFrom.pop();
             }
