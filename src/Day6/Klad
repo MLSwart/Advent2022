@@ -1,0 +1,49 @@
+package Day6;
+
+public class Comms {
+    public static void main(String[] args) {
+        Comms comms = new Comms();
+        String input = "mjqjpqmgbljsphdztnvjfqwrcgsmlb";
+        String[] inputArray = null;
+        inputArray = input.split("");
+        for (int n = 0; n < inputArray.length; n++) {
+            for (int p = 1; p < 4; p++) {
+                if (!inputArray[n].equals(inputArray[p])) {
+                    for (int q = 2; q < 4; q++) {
+                        if (!inputArray[n].equals(inputArray[q])) {
+                            if (inputArray[p].equals(inputArray[q])) {
+                                System.out.println(n + 4);
+                                break;
+                            }
+
+                        }
+                        break;
+                    }
+                    break;
+
+
+                }
+
+
+            }
+        }
+    }
+}
+/*
+We zoeken naar een sequence van 4 characters die allemaal verschillend zijn.
+Ideeën:
+-gevonden = false.
+-maak array van input
+-bekijk int n= 0, n+1, n+2, n+3.
+-is n gelijk aan n+1? => n++
+-is n gelijk aan n+2? => n++
+-is n gelijk aan n+3? => n++
+-is n+1 gelijk aan n+2? => n++
+-is n+1 gelijk aan n+3? => n++
+-is n+2 gelijk aan n+3? => n++
+else: gevonden= true.
+print n+3
+
+
+Kan ik contains gebruiken oid?
+ */
