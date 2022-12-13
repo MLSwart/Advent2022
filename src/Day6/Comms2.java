@@ -5,7 +5,7 @@ import java.util.*;
 public class Comms2 {
     public static void main(String[] args) {
 
-        String input = "qjpmsphdztnvfwrc";
+        String input = "mjqjpqmgbljsphdztnvjfqwrcgsmlb";
 
         char[] messageArray = new char[14];
 
@@ -29,13 +29,9 @@ public class Comms2 {
             boolean noDupes = true;
             if (messageArray[k] == messageArray[k + 1]) noDupes = false;
             if (!noDupes) {
-                System.out.println("Niet alle karakters uniek");
+                System.out.println("Niet uniek");
                 break;
 
-            }
-            if (noDupes){
-                System.out.println("Alleen unieke karakters.");
-                break;
             }
 
         }
