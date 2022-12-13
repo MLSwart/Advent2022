@@ -9,6 +9,7 @@ public class Comms2 {
 
         char[] messageArray = new char[14];
 
+        //maak een char Array
         for (int n = 0; n < messageArray.length; n++) {
 
             messageArray[n] = input.charAt(n);
@@ -25,10 +26,13 @@ public class Comms2 {
         }
         // is [0] uniek? [1] uniek? [2] uniek? ... [14] uniek?
         for (int k = 0; k < messageArray.length - 1; k++) {
+            boolean noDupes = true;
+            if (messageArray[k] == messageArray[k + 1]) noDupes = false;
+            if (!noDupes) {
+                System.out.println("Niet uniek");
+                break;
 
-            if (messageArray[k] == messageArray[k + 1])
-                System.out.print(" " + messageArray[k]);
-            boolean noDupes = false;
+            }
 
         }
 
